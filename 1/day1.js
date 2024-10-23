@@ -3,7 +3,7 @@ import part2 from './part2.js'
 
 const main = document.getElementsByTagName('main')[0]
 
-const input = await (await fetch('/1/input.txt')).text();
+const input = await (await fetch('AoC2023/1/input.txt')).text();
 
 const buttonPart1 = document.getElementById('part1');
 const buttonPart2 = document.getElementById('part2');
