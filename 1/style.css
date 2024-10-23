@@ -1,67 +1,43 @@
-
-b{
-    color: red;
+main{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
-i{
-    color: lime;
-}
-
 main>div{
-    border: solid black 1px;
-    border-radius: 4em;
+    border: dashed #cccccc 1px;
     padding: 2em;
-    background-color: rgb(93, 80, 155);
 }
 main>div>span{
     float: right;
 }
-html{
-    font-family: 'Courier New', Courier, monospace;
-    color:aliceblue;
-    background-color: darkslateblue;
-    font-size: 16px;
+header{
+    margin-bottom: 1em;
 }
 .buttons{
     display: flex;
 }
-.solution{
-    background-color: rgb(93, 80, 155);
-    height: 100%;
-    padding: 2em;
-    text-align: center;
-    border: 1px black solid;
-    border-bottom: 0;
-}
 .buttons>div{
-    border: 1px black solid;
+    border: 1px #cccccc dashed;
     border-top: 0;
     flex:1;
     text-align: center;
-    background-color: rgb(93, 80, 155);
-    border-radius: 4em;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
     transition: background-color .1s;
-}
-.buttons>div:hover{
-    background-color: rgb(67, 58, 112);
-}
-#part1{
-    border-bottom-right-radius: 0;
-    border-right: 0;
-}
-#part2{
-    border-bottom-left-radius: 0;
-    border-left: 0;
-}
-main{
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
-header{
-    margin-bottom: 1em;
 }
 .buttons>div.selected{
     background-color: rgb(40, 34, 68);
 }
+.solution{
+    height: 100%;
+    padding: 2em;
+    text-align: center;
+    border: 1px #cccccc dashed;
+    border-bottom: 0;
+}
+#part1{
+    border-right: 0;
+}
+#part2{
+    border-left: 0;
+}
+
+
