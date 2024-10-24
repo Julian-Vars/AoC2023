@@ -1,0 +1,61 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.game{
+    margin: 1em 0;
+}
+.game.possible{
+    border: dashed 1px #00cc00
+}
+.game.impossible{
+    border: dashed 1px #9b715b
+}
+.gameId{
+    text-align: center;
+}
+.rounds{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+.round{
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cube-line{
+    display: grid;
+    grid-template-columns: repeat(16, 1em);
+    gap: 0.5em;
+    padding: 1em;
+}
+.cube{
+    width: 1em;
+    height: 1em;
+}
+
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.possible{
+    color: #00cc00
+}
+.impossible{
+    color: #9b715b 
+}
+
+.fewest-row>.cube-line{
+    justify-content: center;
+}
+.fewest{
+    border: solid 2px #cccccc
+}

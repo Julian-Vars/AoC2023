@@ -11,3 +11,32 @@ b{
 i{
     color: #ffff66;
 }
+header{
+    margin-bottom: 1em;
+}
+.buttons{
+    display: flex;
+}
+.buttons>div{
+    border: 1px #cccccc dashed;
+    border-top: 0;
+    flex:1;
+    text-align: center;
+    transition: background-color .1s;
+}
+.buttons>div.selected{
+    background-color: rgb(40, 34, 68);
+}
+.solution{
+    height: 100%;
+    padding: 2em;
+    text-align: center;
+    border: 1px #cccccc dashed;
+    border-bottom: 0;
+}
+#part1{
+    border-right: 0;
+}
+#part2{
+    border-left: 0;
+}
