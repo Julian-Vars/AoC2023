@@ -1,0 +1,27 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cell{
+    font-size: 80%;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.partNo{
+    border: dotted 1px #00cc00;
+}
+.partNo + .partNo{
+    border-left: 0;
+}
+.partNo:has(+ .partNo){
+    border-right: 0;
+}
+.symbol{
+    background-color: #ffff66;
+    color: #0f0f23;
+}
