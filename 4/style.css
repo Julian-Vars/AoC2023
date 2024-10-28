@@ -1,0 +1,32 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.card{
+    border: dashed 1px #cccccc;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+.card-no{
+    font-size: 1.5em;
+    text-align: center;
+}
+.numbers{
+    flex:1;    
+    text-align: center;
+}
+.number{
+    width: 2em;
+}
+.numbers-line{
+    display: flex;
+}
+.numbers-line>*:first-child{
+    margin-right: 1em;
+}
+.winner{
+    border: dashed 1px #00cc00;
+}
