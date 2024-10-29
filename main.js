@@ -75,7 +75,7 @@ function displayDays(){
             currentDay = Number(day.id);
             styles.href = `/AoC2023/${day.id}/style.css`
             main.innerHTML = '';
-            const response = await fetch(`/A0C2023/${day.id}/input.txt`);
+            const response = await fetch(`/AoC2023/${day.id}/input.txt`);
             if(!response.ok){
                 main.innerHTML = 'Cannot read file';
                 return;
