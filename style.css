@@ -1,0 +1,21 @@
+.day-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+.day{
+    border: dashed 1px #cccccc;
+    padding: 1em;
+    text-align: center;
+}
+.day:hover{
+    border: dashed 1px #00cc00;
+    color: #00cc00;
+}
+header{
+    display: none;
+    text-align: center;
+}
+main{
+    padding: 0 20em;
+}

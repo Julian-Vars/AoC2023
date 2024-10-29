@@ -20,26 +20,54 @@ header{
 .buttons{
     display: flex;
 }
-.buttons>div{
+
+.button{
     border: 1px #cccccc dashed;
     border-top: 0;
     flex:1;
     text-align: center;
     transition: background-color .1s;
 }
-.buttons>div.selected{
+.button.selected{
     background-color: rgb(40, 34, 68);
 }
 .solution{
     height: 100%;
-    padding: 2em;
-    text-align: center;
-    border: 1px #cccccc dashed;
+
     border-bottom: 0;
+    flex: 1;
 }
 #part1{
     border-right: 0;
 }
 #part2{
     border-left: 0;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    text-align: center;
+    border: 1px #cccccc dashed;
+}
+.modal{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10% 30%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff67;
+    z-index: 1;
+}
+.modal.visible{
+    display: block;
+}
+.popup{
+    border: #cccccc dashed 1px;
+    background-color: #0f0f23;
+    min-height: 20em;
+    padding: 2em 4em;
+    z-index: 2;
 }
