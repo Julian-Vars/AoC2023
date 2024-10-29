@@ -73,9 +73,9 @@ function displayDays(){
     for(const day of document.getElementsByClassName('day')){
         day.onclick = async () => {
             currentDay = Number(day.id);
-            styles.href = `/${day.id}/style.css`
+            styles.href = `/AoC2023/${day.id}/style.css`
             main.innerHTML = '';
-            const response = await fetch(`/AcC2023/${day.id}/input.txt`);
+            const response = await fetch(`/A0C2023/${day.id}/input.txt`);
             if(!response.ok){
                 main.innerHTML = 'Cannot read file';
                 return;
